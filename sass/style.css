@@ -71,7 +71,7 @@
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #432759;
+  background: #302c2c;
   list-style: none;
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
@@ -85,7 +85,7 @@
 }
 
 .menu-branding {
-  background: #502f6b;
+  background: #3d3838;
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
   -webkit-transition: all 0.5s ease-in-out;
@@ -160,6 +160,157 @@
           transition-delay: 0.4s;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #3d3838;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe Ui','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+body#bg-img {
+  background: url(../img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body#bg-img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(61, 56, 56, 0.6);
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+h1.lg-heading, h2.lg-heading, h3.lg-heading {
+  font-size: 5rem;
+  margin: 0;
+}
+
+h1.sm-heading, h2.sm-heading, h3.sm-heading {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  background: rgba(66, 61, 61, 0.6);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: #e98432;
+}
+
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px);
+}
+
+main .icons {
+  margin-top: 1rem;
+}
+
+main a {
+  padding: 0.4rem;
+}
+
+main a:hover {
+  color: #e98432;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+main#home {
+  overflow: hidden;
+}
+
+main#home h1 {
+  margin-top: 20vh;
+}
+
+.about-info {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+      grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.about-info .bio-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: bioimage;
+  width: 220px;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  border-radius: 50%;
+  border: #e98432 3px solid;
+}
+
+.about-info .bio {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: bio;
+  font-size: 1.5rem;
+}
+
+.about-info .job-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: job1;
+}
+
+.about-info .job-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: job2;
+}
+
+.about-info .job-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: job3;
+}
+
+.about-info .job {
+  background: #4a4444;
+  padding: 0.5rem;
+  border-bottom: #e98432 5px solid;
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222020;
+  color: #fff;
+  height: 60px;
+}
+
 @media screen and (max-width: 768px) {
   main {
     -webkit-box-align: center;
@@ -199,99 +350,16 @@
     border: solid 1px #e98432;
     background-size: cover;
   }
+  .about-info {
+        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh;
   }
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  background: #502f6b;
-  color: #fff;
-  height: 100%;
-  margin: 0;
-  font-family: 'Segoe Ui','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
-}
-
-body#bg-img {
-  background: url(../img/background.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-body#bg-img::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: rgba(80, 47, 107, 0.6);
-}
-
-h1, h2, h3 {
-  margin: 0;
-  font-weight: 400;
-}
-
-h1.lg-heading, h2.lg-heading, h3.lg-heading {
-  font-size: 6rem;
-}
-
-h1.sm-heading, h2.sm-heading, h3.sm-heading {
-  margin-bottom: 2rem;
-  padding: 0.2rem 1rem;
-  background: rgba(85, 50, 114, 0.6);
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-}
-
-.text-secondary {
-  color: #e98432;
-}
-
-main {
-  padding: 4rem;
-  height: 100%;
-}
-
-main .icons {
-  margin-top: 1rem;
-}
-
-main a {
-  padding: 0.4rem;
-}
-
-main a:hover {
-  color: #e98432;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-main#home {
-  overflow: hidden;
-}
-
-main#home h1 {
-  margin-top: 20vh;
 }
 /*# sourceMappingURL=style.css.map */
