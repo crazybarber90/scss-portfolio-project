@@ -71,7 +71,7 @@
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #121112;
+  background: #160a16;
   list-style: none;
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
@@ -85,7 +85,7 @@
 }
 
 .menu-branding {
-  background: #1f1e1f;
+  background: #271227;
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
   -webkit-transition: all 0.5s ease-in-out;
@@ -104,7 +104,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
-  border: solid 3px #e98432;
+  border: solid 3px #e7a821;
 }
 
 .menu .nav-item {
@@ -120,7 +120,7 @@
 }
 
 .menu .nav-item.current > a {
-  color: #e98432;
+  color: #e7a821;
 }
 
 .menu .nav-link {
@@ -137,7 +137,7 @@
 }
 
 .menu .nav-link:hover {
-  color: #e98432;
+  color: #e7a821;
 }
 
 .nav-item:nth-child(1) {
@@ -166,7 +166,7 @@
 }
 
 body {
-  background: #1f1e1f;
+  background: #271227;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -188,7 +188,7 @@ body#bg-img::after {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: rgba(31, 30, 31, 0.6);
+  background: rgba(39, 18, 39, 0.6);
 }
 
 h1, h2, h3 {
@@ -197,18 +197,18 @@ h1, h2, h3 {
 }
 
 h1.lg-heading, h2.lg-heading, h3.lg-heading {
-  font-size: 5rem;
+  font-size: 4.5rem;
   margin: 0;
 }
 
 h1.sm-heading, h2.sm-heading, h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
-  background: rgba(36, 35, 36, 0.6);
+  background: rgba(46, 21, 46, 0.6);
 }
 
 a {
-  color: #fff;
+  color: #f5a906;
   text-decoration: none;
 }
 
@@ -219,7 +219,7 @@ header {
 }
 
 .text-secondary {
-  color: #e98432;
+  color: #e7a821;
 }
 
 main {
@@ -236,7 +236,7 @@ main a {
 }
 
 main a:hover {
-  color: #e98432;
+  color: #ff7300;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -268,7 +268,7 @@ main#home h1 {
      object-fit: cover;
   margin: auto;
   border-radius: 50%;
-  border: #e98432 3px solid;
+  border: #e7a821 3px solid;
 }
 
 .about-info .bio {
@@ -298,9 +298,9 @@ main#home h1 {
 }
 
 .about-info .job {
-  background: #2c2b2c;
+  background: #381a38;
   padding: 0.5rem;
-  border-bottom: #e98432 5px solid;
+  border-bottom: #e7a821 5px solid;
 }
 
 .projects {
@@ -320,9 +320,28 @@ main#home h1 {
 
 .projects img:hover {
   opacity: 0.5;
-  border-color: #e98432;
+  border-color: #e7a821;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+.boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxes div {
+  margin: 10px 0;
+  font-size: 1.1rem;
 }
 
 .btn, .btn-dark, .btn-light {
@@ -333,7 +352,7 @@ main#home h1 {
 }
 
 .btn:hover, .btn-dark:hover, .btn-light:hover {
-  background: #e98432;
+  background: #e7a821;
   color: #000;
 }
 
@@ -343,7 +362,7 @@ main#home h1 {
 }
 
 .btn-light {
-  background: #a09ca0;
+  background: #c078c0;
   color: #333;
   margin-top: -15px;
 }
@@ -351,7 +370,7 @@ main#home h1 {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #050505;
+  background: #040204;
   color: #fff;
   height: 60px;
 }
@@ -406,7 +425,7 @@ main#home h1 {
   .menu-branding .portrait {
     width: 140px;
     height: 140px;
-    border: solid 1px #e98432;
+    border: solid 1px #e7a821;
     background-size: cover;
   }
   .about-info {
